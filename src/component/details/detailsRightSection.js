@@ -5,8 +5,8 @@ export default class DetailsRightSection extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      rdColor: "clBlack",
-      rdSize: "XS"
+      rdColor: "",
+      rdSize: ""
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -34,7 +34,6 @@ export default class DetailsRightSection extends React.Component {
                 type='radio'
                 name='rdColor'
                 value='black'
-                checked
                 onChange={this.handleChange}
               />
               <span className={`${styles.checkMark} ${styles.black}`}></span>

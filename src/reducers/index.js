@@ -1,13 +1,13 @@
 import { ADD_TO_CART } from "../action/cartActions";
-
+import { DEL_TO_CART } from "../action/cartActions";
 const defaultState = {
   cartItemCount: 0,
   product: []
 };
 
-function appendItem(array, action) {
-  return [...array, action.item];
-}
+// function appendItem(array, action) {
+//   return [...array, action.item];
+// }
 
 let stateStored = { ...defaultState };
 
@@ -25,10 +25,16 @@ export default function appReducers(state = stateStored, action) {
         ...state,
         cartItemCount: (state.cartItemCount = localStorage.cartItemCount)
       };
-      break;
-
+    case DEL_TO_CART:
+      localStorage.cartItemCount = Number(localStorage.cartItemCount) - 1;
+      if (localStorage.cartItemCount < 0) {
+        localStorage.cartItemCount = state.cartItemCount;
+      }
+      return {
+        ...state,
+        cartItemCount: (state.cartItemCount = localStorage.cartItemCount)
+      };
     default:
       return state;
-      break;
   }
 }

@@ -34,13 +34,14 @@ export default class CTBST extends React.Component {
             item
           };
         default:
-          console.log("NO PRODUCTS!!!!!!!!!!!");
+          console.log("NO PRODUCTS WITH THESE CODE!!!!!!!!!!!");
           break;
       }
       return state;
     });
   }
   render() {
+    console.log(this.map(this.props, dataProduct));
     const newArr = this.map(this.state, dataProduct);
     console.log(newArr);
     return (

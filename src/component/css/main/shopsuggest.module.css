@@ -1,0 +1,47 @@
+.suggest {
+  float: left;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.suggestEl {
+  max-width: 1024px;
+  min-width: 360px;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+.suggestEl:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+
+.suggestFrame {
+  width: 50%;
+}
+.overflow {
+}
+.suggestImg {
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+.suggestTextArea {
+  width: 50%;
+}
+.suggestTitle {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1.83;
+  letter-spacing: normal;
+  margin: 0;
+  padding: 15px;
+}
+.suggestDiscription {
+  font-size: 10px;
+  line-height: 1.4;
+  letter-spacing: 0.5px;
+  margin: 0;
+  padding: 15px;
+}

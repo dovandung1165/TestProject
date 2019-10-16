@@ -1,0 +1,39 @@
+.footer {
+  width: 100%;
+  background-color: #000000;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.footerEl {
+  width: 45%;
+  margin: 50px 0 0 20px;
+}
+.footerTitle {
+  color: #fdfcfc;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.footerItem {
+  margin: 10px 0 0 0;
+}
+.footerItemIn img {
+  margin: 0 0 0 5px;
+}
+.footerItemIn p {
+  color: #fdfcfc;
+  margin: 5px 0 0 0;
+  font-size: 12px;
+}
+.line {
+  width: 100%;
+  height: 50px;
+  background: #000000;
+}
+
+@media screen and (min-width: 992px) {
+  .footer {
+    flex-wrap: unset;
+  }
+}

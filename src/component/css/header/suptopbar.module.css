@@ -1,0 +1,46 @@
+.supTopBarMain {
+  display: table;
+  width: 100%;
+}
+
+.supChildren {
+  width: 50%;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0 10px 0;
+}
+
+.supChildren::after {
+  content: "";
+  display: table;
+}
+
+.supChildrenIcon {
+  width: 25px;
+  height: 25px;
+}
+
+.supChildren ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.supChildren li {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.supChildren li:last-child {
+  font-weight: unset;
+  color: darkgrey;
+}
+
+@media screen and (min-width: 992px) {
+  .supTopBarMain {
+    display: flex;
+    justify-content: space-around;
+  }
+}

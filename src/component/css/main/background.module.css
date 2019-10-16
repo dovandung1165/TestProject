@@ -1,0 +1,132 @@
+.mainBanner {
+  float: left;
+  width: 100%;
+  margin: 20px 0 0 0;
+}
+
+.banner {
+  float: left;
+  background: url("/img/banner@2x.png");
+  position: relative;
+  width: 100%;
+  height: 300px;
+  font-family: sans-serif;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+}
+
+.bannerSubtitle {
+  font-size: 10px;
+  text-transform: uppercase;
+  line-height: 1.57;
+  letter-spacing: 2.8px;
+  margin: 37px 0px 0px 122px;
+}
+
+.banner h1 {
+  width: 232px;
+  line-height: 1.25;
+  letter-spacing: -0.24px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0 0px 0px 80px;
+}
+
+.bannerDiscription {
+  width: 304px;
+  font-size: 12px;
+  line-height: 1.57;
+  text-transform: uppercase;
+  padding: 3px 0px 0px 80px;
+}
+
+.bannerLinkbutton {
+  background-color: #ffffff;
+  text-align: center;
+  width: 99px;
+  height: 30px;
+  margin: 11px 0px 0px 187px;
+}
+
+.bannerLinkbutton a {
+  padding: 6px;
+  color: black;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 1.57;
+  letter-spacing: normal;
+  text-align: center;
+  display: block;
+}
+
+.bannerNote {
+  position: absolute;
+  font-size: 8px;
+  bottom: 10px;
+  left: 35px;
+}
+
+.buttonClick {
+  position: absolute;
+  display: flex;
+  right: 0;
+  bottom: 0;
+  width: 17%;
+  height: 13%;
+  background-color: #ffffff;
+}
+
+.buttonClickClick {
+  margin: 0px 0.25px 0px 0.25px;
+  float: right;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 992px) {
+  .banner {
+    background: url("/img/banner@3x.png");
+    width: 100%;
+    height: 619px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .bannerSubtitle {
+    font-size: 14px;
+    line-height: 1.57;
+    letter-spacing: 2.8px;
+    margin: 164px 0 0 180px;
+  }
+  .banner h1 {
+    width: 376px;
+    height: 98px;
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1.25;
+    letter-spacing: -0.24px;
+  }
+  .bannerDiscription {
+    width: 100%;
+    padding: 0;
+    font-size: 14px;
+    line-height: 1.57;
+    padding: 33px 0 0 103px;
+  }
+  .bannerLinkbutton {
+    width: 141px;
+    height: 50px;
+    margin: 15px 0 0 352px;
+  }
+  .bannerLinkbutton a {
+    font-size: 14px;
+    padding: 14px;
+  }
+}

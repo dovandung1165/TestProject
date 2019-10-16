@@ -1,0 +1,7 @@
+.product {
+  width: 100%;
+}
+.productFrame {
+  max-width: 1024px;
+  margin: auto;
+}

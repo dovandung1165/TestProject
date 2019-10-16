@@ -1,0 +1,76 @@
+.menuOptionMobile {
+  display: none;
+}
+.menuOption {
+  display: none;
+}
+@media screen and (min-width: 992px) {
+  .menuOptionMobile {
+    display: none;
+  }
+  .menuOption {
+    display: block;
+    float: left;
+    width: 20%;
+    height: 230px;
+    margin: 0 0 0 20px;
+  }
+  .menuOptionChilren p {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 1.83;
+    text-transform: uppercase;
+    margin: 10px 0 0 0;
+  }
+  .menuOptionChilren ul {
+    display: none;
+  }
+  .menuOptionChilren:hover ul {
+    display: block;
+    padding: 10px 0 0 30px;
+  }
+  .menuOptionChilren:nth-child(3):hover ul {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+  button {
+    background: #ffffff;
+    border: 1px solid #000000;
+  }
+  .saleImg {
+    position: relative;
+    width: 174px;
+    height: 200px;
+    left: 0;
+  }
+  .saleImg img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+  }
+  .subTitle {
+    font-size: 10px;
+    line-height: 2.2;
+    text-transform: uppercase;
+    margin: 10px 0 0 0;
+  }
+  .note {
+    position: absolute;
+    font-size: 18px;
+    font-weight: bold;
+    color: #e9b8bb;
+    line-height: 1.33;
+    letter-spacing: 0.9px;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    bottom: 20px;
+    left: 20px;
+  }
+  .note p {
+    margin: 0;
+  }
+}

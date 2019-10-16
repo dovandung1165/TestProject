@@ -11,3 +11,54 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+* {
+  box-sizing: border-box;
+}
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+a:hover {
+  color: #a5a0a9;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+p {
+  margin: 0;
+}
+.marginToHeader {
+  margin: 105px 0 0 0;
+}
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+}
+.container {
+  width: 100%;
+  font-family: sans-serif;
+}
+.category-main {
+  float: left;
+}
+.fa-bars {
+  color: white;
+  font-size: 30px;
+}
+.fa-caret-down {
+  color: #ffffff;
+  font-size: 40px;
+}
+.fa-caret-up {
+  color: #ffffff;
+  font-size: 40px;
+}
+
+.fa-check-circle {
+  color: #2e8b57;
+}

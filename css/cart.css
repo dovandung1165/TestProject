@@ -1,0 +1,392 @@
+header {
+    width: 100%;
+}
+
+header::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+}
+
+/*MOBILE FIRST*/
+
+/*end HINH THUC GIAO HANG*/
+
+.co-the-ban-se-thich {
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 10px 0 10px 0;
+}
+
+.masp {
+    width: 100%;
+    height: 14px;
+    font-size: 12px;
+    line-height: 1.83;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.giasp {
+    width: 100%;
+    height: 10px;
+    font-size: 12px;
+    line-height: 1.83;
+    color: #e9b8bb;
+    text-align: center;
+}
+
+.procduct {
+    float: left;
+    width: 100%;
+    height: auto;
+    margin: 10px 11px 0px 0px;
+    animation: oppro 2s ease-out normal forwards;
+}
+
+.procduct a {
+    color: black;
+    text-decoration: none;
+}
+
+.btn-add-to-card {
+    display: none;
+}
+
+/*CART*/
+
+.gio-hang {
+    /* KHUNG GIỎ HÀNG */
+    float: left;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    border: solid 1px grey;
+    background-color: var(--white);
+    margin: 45px 0 0 0;
+}
+
+.table, tr, td {
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.table-gio-hang {
+    /* BẢNG NẰM BÊN TRONG KHUNG GIỎ HÀNG*/
+    width: 100%;
+    height: 330px;
+    font-size: 10px;
+    border: #000000;
+    font-family: sans-serif;
+}
+
+.table-gio-hang td {
+    width: 118px;
+    height: 47px;
+}
+
+.table-gio-hang caption {
+    padding-top: 20px;
+    width: 922px;
+    height: 50px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.table-gio-hang tr:first-child {
+    color: darkgrey;
+    font-weight: bold;
+}
+
+.table-gio-hang td:first-child {
+    width: 47px;
+    height: 47px;
+    text-align: center;
+}
+
+.table-gio-hang p:first-child {
+    font-weight: bold;
+}
+
+.table-gio-hang td:last-child {
+    text-align: center;
+    width: 50px;
+    height: 47px;
+}
+
+.btn-delete {
+    background-color: #ffffff;
+    color: #757474;
+    border: none;
+    cursor: pointer;
+}
+
+/* ĐỘ RỘNG CỦA THANH FORM */
+
+.form-table {
+    width: 100%;
+    float: left;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.form-table span {
+    display: none;
+}
+
+.chon-them-sp {
+    float: left;
+    width: 30%;
+    padding: 0 0 0 0;
+    margin: 0 10px 0 10px;
+}
+
+.btn-chon-them-sp {
+    font-weight: bold;
+    font-size: 10px;
+    width: 100%;
+    height: 40px;
+    margin: 40px 0px 0px 0px;
+    padding: 0 0 0 0;
+    bottom: 0;
+}
+
+/*FORM*/
+
+.form-table form {
+    float: left;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+
+.form-table p {
+    text-align: center;
+    color: darkgrey;
+    font-weight: bold;
+}
+
+.form-discount {
+    width: 65%;
+    display: table;
+}
+
+.btn-apdung {
+    width: 76px;
+    height: 31px;
+    font-size: 13px;
+    background-color: black;
+    color: #ffffff;
+    border: none;
+    margin: 0 0 0 10px;
+}
+
+.text-form {
+    width: 100%;
+    display: flex;
+    justify-content: inherit;
+    color: darkgrey;
+    font-weight: bold;
+    margin: 20px 0 0 0;
+}
+
+.btn-thanh-toan-baomat {
+    margin: 0 0px 0 0;
+}
+
+.btn-thanh-toan-baomat button {
+    margin: 0 0 0 0px;
+    width: 100%;
+    height: 39px;
+    font-size: 10px;
+    border: none;
+    text-transform: uppercase;
+    background-color: #00a99d;
+    color: #ffffff;
+}
+
+/* end FOOTER*/
+
+/*TABLET*/
+
+@media screen and (min-width: 768px) {}
+
+/*DESKTOP*/
+
+@media screen and (min-width:992px) {
+    .form-table {
+        width: 100%;
+        display: flex;
+        float: none;
+        justify-content: space-around;
+        margin-bottom: 30px;
+    }
+    .fa-chevron-left {
+        font-size: 16px;
+        margin: 0 5px 0 0;
+    }
+    .chon-them-sp {
+        padding: 14px 0 0 0;
+        margin: 0 0 0 20px;
+    }
+    .btn-chon-them-sp {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .form-discount {
+        padding: 20px 0 0 0;
+    }
+    .form-table form {
+        float: none;
+        display: flex;
+        width: auto;
+        padding: 0 0 0 55px;
+    }
+    .form-table span {
+        display: block;
+    }
+    .btn-thanh-toan-baomat {
+        margin: 0 20px 0 0;
+    }
+    .btn-thanh-toan-baomat button {
+        margin: 40px 0px 0 0px;
+        width: 160px;
+        height: 39px;
+        font-size: 10px;
+        border: none;
+        text-transform: uppercase;
+        background-color: #00a99d;
+        color: #ffffff;
+    }
+    .row:nth-child(2) {
+        width: 1000px;
+    }
+    .mov-left-all-product-details {
+        width: 1000px;
+        margin: auto;
+    }
+    .mov-left-all-product-details>div {
+        position: relative;
+        -webkit-animation: mov-left-all-product 3s ease-out normal forwards;
+        animation: mov-left-all-product 3s ease-out normal forwards;
+    }
+    .procduct {
+        float: left;
+        position: relative;
+        width: 219px;
+        height: 322px;
+        margin: 10px 11px 0px 0px;
+        animation: oppro 2s ease-out normal forwards;
+    }
+    .procduct:hover {
+        border: 1px solid black;
+    }
+    .overflow {
+        overflow: hidden;
+    }
+    .product-img-scale:hover {
+        border: black;
+        -ms-transform: scale(1.25, 1.25);
+        /* IE 9 */
+        -webkit-transform: scale(1.25, 1.25);
+        /* Safari prior 9.0 */
+        transform: scale(1.25, 1.25);
+        /* Standard syntax */
+    }
+    @-webkit-keyframes mov-left-all-product {
+        0% {
+            left: -30px;
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+            left: 0px;
+        }
+    }
+    @keyframes mov-left-all-product {
+        0% {
+            left: -30px;
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+            left: 0px;
+        }
+    }
+    .btn-add-to-card {
+        display: none;
+        position: absolute;
+        border-radius: 8px;
+        border: none;
+        background-color: #ffffff;
+        color: black;
+        cursor: pointer;
+        font-size: 12px;
+        width: 100px;
+        height: 20px;
+        bottom: 15px;
+        left: 60px;
+        animation-name: down-to-up;
+        animation-duration: 1s;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+        -webkit-animation-name: down-to-up;
+        -webkit-animation-duration: 1s;
+        -webkit-animation-direction: normal;
+        -webkit-animation-fill-mode: forwards;
+    }
+    .product-img-scale:hover {
+        border: black;
+        -ms-transform: scale(1.25, 1.25);
+        /* IE 9 */
+        -webkit-transform: scale(1.25, 1.25);
+        /* Safari prior 9.0 */
+        transform: scale(1.25, 1.25);
+        /* Standard syntax */
+    }
+    .product-img:hover .btn-add-to-card {
+        display: block;
+    }
+    @-webkit-keyframes down-to-up {
+        /*0%{bottom:0;}
+            100%{bottom:20px;}*/
+        from {
+            bottom: 0;
+            opacity: 0.2;
+        }
+        to {
+            bottom: 40px;
+            opacity: 1;
+        }
+    }
+    @keyframes down-to-up {
+        /*0%{bottom:0;}
+            100%{bottom:20px;}*/
+        from {
+            bottom: 0;
+            opacity: 0.2;
+        }
+        to {
+            bottom: 40px;
+            opacity: 1;
+        }
+    }
+}

@@ -1,0 +1,72 @@
+.subFooter {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.subFooterFrame {
+  width: 100%;
+  height: 423px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.subFooterFrame:first-child {
+  background-color: #eab7bc;
+}
+.subFooterFrame:nth-child(2n) {
+  background: url("/img/model/b-hoatiet-@3x.png");
+  background-size: cover;
+}
+.subFooterFrame:last-child {
+  background-color: #ebebeb;
+}
+.subFooterFrame ul {
+  list-style-type: none;
+  margin: 24px 0 0 0;
+}
+.subFooterFrame ul li:nth-child(3n + 1) {
+  margin: 10px 0 0 0;
+}
+.subFooterFrame:last-child .subFooterSubTitle:nth-child(2) {
+  margin: 24px 0 0 0;
+}
+.subFooterFrame a {
+  font-size: 12px;
+  line-height: 2;
+}
+.subFooterTitle {
+  font-size: 14px;
+  font-weight: bold;
+}
+.subFooterSubTitle {
+}
+
+.subFooterFrameIn {
+  width: 287px;
+  height: 289px;
+  opacity: 0.92;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ffffff;
+}
+
+.subFooterFrame p {
+  font-weight: unset;
+}
+.operationHours {
+  margin: 0;
+}
+
+.valueVoucher {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 992px) {
+  .subFooter {
+    flex-direction: unset;
+  }
+}

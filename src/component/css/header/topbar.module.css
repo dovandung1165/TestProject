@@ -1,0 +1,55 @@
+/*MOBILE FIRST*/
+
+.topBar {
+  width: 100%;
+  height: 57px;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topBarLogo {
+  float: left;
+  text-transform: lowercase;
+  padding: 0 0 0 30px;
+  color: white;
+  text-decoration: none;
+}
+
+.topBarLogo h3 {
+  font-size: 12px;
+  margin: 0;
+}
+
+.topBarMobile {
+  float: right;
+  padding: 0 20px 0 0;
+}
+
+.topBarDesktop {
+  display: none;
+}
+
+@media screen and (min-width: 992px) {
+  .topBarMobile {
+    display: none;
+  }
+
+  .topBar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+    margin: 0 20px 0 0;
+  }
+  .topBar ul a {
+    color: white;
+  }
+  .topBar li {
+    margin: 10px 10px 10px 15px;
+    font-size: 10px;
+    font-weight: bold;
+    color: white;
+  }
+}

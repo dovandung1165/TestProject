@@ -1,47 +1,67 @@
-/* eslint-disable react/prop-types */
-import React from "react";
-import styles from "../css/product/products.module.css";
-import dataJSON from "../../dataProducts";
-import store from "../../store/index";
+import React, { Component } from "react";
+import PropTypes from "prop-types";
+import { connect } from "react-redux";
 import { addToCart } from "../../action/cartActions";
+import { addToDetails } from "../../action/cartActions";
+import { fetchProducts } from "../../action/productActions";
 import { NavLink } from "react-router-dom";
+import styles from "../css/product/products.module.css";
+import ProductItem from "./productItem";
 
-function ProductsRender() {
-  return <Product data={dataJSON} />;
-}
-function Product({ data }) {
-  return (
-    <div className={styles.productFrame}>
-      {data.map(item => (
-        <ProductIn key={item.id} {...item} />
-      ))}
-    </div>
-  );
-}
-
-function handleCartButtonClick(event) {
-  event.preventDefault();
-  store.dispatch(addToCart());
-}
-function ProductIn({ img, title, price, id }) {
-  return (
-    <NavLink to='/details' activeClassName='active'>
-      <div className={styles.product} id={id}>
-        <div className={styles.overflow}>
-          <div className={styles.productImg}>
-            <img src={img} />
-            <button
-              className={styles.btnAddToCart}
-              onClick={handleCartButtonClick}>
-              Add to card
-            </button>
-          </div>
-        </div>
-        <div className={styles.title}>{title}</div>
-        <div className={styles.price}>{price}</div>
+class ProductsRender extends Component {
+  static propTypes = {
+    addToCart: PropTypes.func.isRequired,
+    addToDetails: PropTypes.func.isRequired
+  };
+  handleAddToCart = id => {
+    const product = this.props.products.find(product => id === product.id);
+    if (product) {
+      this.props.addToCart(product);
+    }
+  };
+  handleAddToDetails = id => {
+    const product = this.props.products.find(product => id === product.id);
+    if (product) {
+      this.props.addToDetails(product);
+    }
+  };
+  componentDidMount() {
+    this.props.fetchProducts();
+  }
+  render() {
+    const { products } = this.props;
+    console.log("product fetch", products);
+    return (
+      <div className={styles.productFrame}>
+        {products.map(item => {
+          return (
+            <NavLink key={item.id} to='/details' activeClassName='active'>
+              <ProductItem
+                {...item}
+                onAddToCart={this.handleAddToCart}
+                onAddToDetails={this.handleAddToDetails}
+              />
+            </NavLink>
+          );
+        })}
       </div>
-    </NavLink>
-  );
+    );
+  }
 }
 
-export default ProductsRender;
+function mapStateToProps({ productsReducer }) {
+  return {
+    products: productsReducer.items
+  };
+}
+
+const mapDispatchToProps = {
+  addToCart,
+  fetchProducts,
+  addToDetails
+};
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(ProductsRender);

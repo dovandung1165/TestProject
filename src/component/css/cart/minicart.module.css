@@ -53,6 +53,8 @@
   width: 85px;
 }
 .cartPrice {
+  display: flex;
+  justify-content: space-around;
 }
 .cartPrice span {
   color: #ddd;

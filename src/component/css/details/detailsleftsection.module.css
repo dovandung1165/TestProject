@@ -53,6 +53,17 @@
   text-transform: uppercase;
   right: 40px;
 }
+.detailsImage {
+  width: 324px;
+  margin: auto;
+}
+.detailsImage .mainImg {
+  width: 100%;
+}
+.subImg {
+  margin: 0 5px 0 0;
+}
+
 @media screen and (min-width: 576px) {
   .describe {
     display: block;

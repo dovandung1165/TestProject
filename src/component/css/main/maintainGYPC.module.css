@@ -56,7 +56,11 @@
   align-items: flex-start;
   padding: 30px 0 0 28px;
 }
+.maintainFrame:hover .maintainChildrenSubTitle {
+  display: block;
+}
 .maintainChildrenSubTitle {
+  position: relative;
   font-size: 14px;
   font-weight: bold;
   font-style: normal;
@@ -67,7 +71,9 @@
   text-align: left;
   color: #fffefe;
   margin: 0;
+  display: block;
 }
+
 .maintainChildrenTitle {
   font-size: 24px;
   font-weight: bold;

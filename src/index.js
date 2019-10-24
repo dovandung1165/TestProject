@@ -5,11 +5,7 @@ import "./fontawesome-free-5.9.0-web/css/all.css";
 import * as serviceWorker from "./serviceWorker";
 import App from "./App";
 function Mytemplate() {
-  return (
-    <div className='container'>
-      <App />
-    </div>
-  );
+  return <App />;
 }
 
 ReactDOM.render(<Mytemplate />, document.getElementById("root"));

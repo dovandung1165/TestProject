@@ -14,6 +14,9 @@ code {
 * {
   box-sizing: border-box;
 }
+.root {
+  font-family: sans-serif;
+}
 main {
   width: 100%;
   display: flex;
@@ -21,6 +24,7 @@ main {
 }
 a:hover {
   color: #a5a0a9;
+  text-decoration: none;
 }
 ul {
   margin: 0;
@@ -36,7 +40,7 @@ p {
 header {
   width: 100%;
   position: fixed;
-  z-index: 1;
+  z-index: 99;
   top: 0;
 }
 .container {

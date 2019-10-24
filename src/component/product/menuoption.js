@@ -59,14 +59,7 @@ function MenuOption() {
         </div>
         <div className={styles.menuOptionChilren}>
           <p>GIÁ</p>
-          <input
-            type='range'
-            min='109,000'
-            max='4,020,000'
-            value='50'
-            className='slider'
-            id='myRange'
-          />
+          <input type='range' id='myRange' />
         </div>
         <div className={styles.menuOptionChilren}>
           <p>Màu sắc</p>

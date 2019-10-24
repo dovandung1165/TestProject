@@ -38,7 +38,7 @@ function GoiYPhongCachChildren({ subTitle, title, bgItem }) {
   return (
     <div className={styles.maintainChildren} style={bgItem}>
       <div>
-        <p className={styles.maintainChildrenSubTitle}>{subTitle}</p>
+        <p className={`${styles.maintainChildrenSubTitle}`}>{subTitle}</p>
         <p className={styles.maintainChildrenTitle}>{title}</p>
       </div>
     </div>

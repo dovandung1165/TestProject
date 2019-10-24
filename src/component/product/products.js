@@ -35,7 +35,10 @@ class ProductsRender extends Component {
       <div className={styles.productFrame}>
         {products.map(item => {
           return (
-            <NavLink key={item.id} to='/details' activeClassName='active'>
+            <NavLink
+              key={item.id}
+              to={`/details/${item.id}`}
+              activeClassName='active'>
               <ProductItem
                 {...item}
                 onAddToCart={this.handleAddToCart}

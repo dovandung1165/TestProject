@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
-import styles from "../css/details/detailsrender.module.css";
+import styles from "../../assets/details/detailsrender.module.css";
+
 export default class DirectLink extends React.Component {
   render() {
     return (

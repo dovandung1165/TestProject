@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-key */
 /* eslint-disable react/prop-types */
 import React from "react";
-import styles from "../css/main/shopsuggest.module.css";
+import styles from "../../assets/main/shopsuggest.module.css";
 
 function ShopSuggestRender() {
   return <ShopSuggest data={dataShopSuggestion} />;

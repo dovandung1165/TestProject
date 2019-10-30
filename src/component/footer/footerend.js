@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../css/footer/footerend.module.css";
+import styles from "../../assets/footer/footerend.module.css";
 
 function FooterEndRender() {
   return <FooterEnd />;
@@ -12,7 +12,7 @@ function FooterEnd() {
           <div className={styles.footerTitle}>Thanh toán</div>
           <div className={styles.footerItem}>
             <img
-              src='img/thanhtoan/payment-method-master-card.png'
+              src='/img/thanhtoan/payment-method-master-card.png'
               alt='Payment Master Card'
             />
             <img
@@ -27,14 +27,14 @@ function FooterEnd() {
           <div className={styles.footerItem}>
             <div className={styles.footerItemIn}>
               <img
-                src='img/donvi-giaohang/kerry-express.png'
+                src='/img/donvi-giaohang/kerry-express.png'
                 alt='Kerry express'
               />
               <img
-                src='img/donvi-giaohang/viettel-post.png'
+                src='/img/donvi-giaohang/viettel-post.png'
                 alt='Viettel post'
               />
-              <img src='img/donvi-giaohang/vnpost.png' alt='Viet Nam post' />
+              <img src='/img/donvi-giaohang/vnpost.png' alt='Viet Nam post' />
             </div>
           </div>
         </div>
@@ -42,8 +42,8 @@ function FooterEnd() {
           <div className={styles.footerTitle}>Dịch vụ vận chuyển</div>
           <div className={styles.footerItem}>
             <div className={styles.footerItemIn}>
-              <img src='img/chungnhan/dathongbao.png' alt='Da thong bao' />
-              <img src='img/chungnhan/tin-dung-02-01.png' alt='Tin dung' />
+              <img src='/img/chungnhan/dathongbao.png' alt='Da thong bao' />
+              <img src='/img/chungnhan/tin-dung-02-01.png' alt='Tin dung' />
             </div>
           </div>
         </div>

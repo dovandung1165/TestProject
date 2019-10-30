@@ -1,7 +1,9 @@
 import React from "react";
+import styles from "../../assets/details/dynamicstable.module.css";
+
 import Tabs from "react-bootstrap/Tabs";
 import Tab from "react-bootstrap/Tab";
-import styles from "../css/details/dynamicstable.module.css";
+
 export default function Dynamics() {
   return (
     <Tabs defaultActiveKey='chitiet' id='uncontrolled-tab-example'>

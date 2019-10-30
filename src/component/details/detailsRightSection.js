@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../css/details/detailsrightsection.module.css";
+import styles from "../../assets/details/detailsrightsection.module.css";
 
 export default class DetailsRightSection extends React.Component {
   constructor(props) {
@@ -22,7 +22,13 @@ export default class DetailsRightSection extends React.Component {
   handleSubmit(event) {
     event.preventDefault();
   }
+  handleCartClick = event => {
+    event.preventDefault();
+    console.log("ID add:", this.props.id);
+    this.props.onAddToCart(this.props.id);
+  };
   render() {
+    const { id } = this.props;
     return (
       <div className={styles.detailsOption}>
         <form className={styles.formToCart}>
@@ -89,7 +95,11 @@ export default class DetailsRightSection extends React.Component {
           <p className={styles.noteStore}>
             Có sẵn tất cả kích cỡ. Sắp hết hàng
           </p>
-          <button onSubmit={this.handleSubmit} className={styles.btnSubmit}>
+          <button
+            type='button'
+            // onSubmit={this.handleSubmit}
+            onClick={this.handleCartClick}
+            className={styles.btnSubmit}>
             Cho vào giỏ hàng
           </button>
         </form>

@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from "react";
-import styles from "../css/header/suptopbar.module.css";
+import styles from "../../assets/header/suptopbar.module.css";
 
 function SupTopBarRender() {
   return <SupTopBar dataSupTopBar={dataIcon} />;
@@ -11,7 +11,6 @@ function SupTopBar({ dataSupTopBar }) {
     <section>
       <div className={`${styles.supTopBarMain} marginToHeader`}>
         {dataSupTopBar.map(item => {
-          // eslint-disable-next-line react/jsx-key
           return <SupTopBarChildren key={item.id} {...item} />;
         })}
       </div>

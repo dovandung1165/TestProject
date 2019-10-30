@@ -1,0 +1,149 @@
+.headMenu {
+  width: 100%;
+  background: #ffffff;
+}
+
+/*MOBILE FISRT*/
+
+.headMenu ul {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 50px 0 0;
+  padding: 0;
+}
+
+.headMenu ul li {
+  font-size: 10px;
+  margin: 10px 10px 10px 15px;
+  list-style-type: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+.cartIconLink {
+  position: relative;
+}
+.cartIconLink:hover .miniCart {
+  visibility: visible;
+  opacity: 1;
+}
+.cartCount {
+  position: absolute;
+  background: #fe4536;
+  color: #fff;
+  height: 20px;
+  width: 20px;
+  font-size: 10px;
+  text-align: center;
+  font-weight: 500;
+  border-radius: 50%;
+  line-height: 22px;
+  left: 14px;
+  top: -6px;
+}
+
+/*Mini cart */
+ul.miniCart {
+  background: #fff;
+  flex-direction: column;
+  opacity: 0;
+  position: absolute;
+  padding: 25px;
+  right: 0;
+  top: 100%;
+  transition: all 0.3s ease 0s;
+  width: 350px;
+  z-index: 9;
+  margin: 0;
+  box-shadow: 0px 12px 24px 0px rgba(254, 69, 54, 0.3);
+  visibility: hidden;
+}
+
+.miniCart > li {
+  display: block;
+  margin-bottom: 22px;
+  margin-left: 0;
+  overflow: hidden;
+  padding: 0;
+}
+.miniCart > li:last-child {
+  margin-bottom: 0;
+}
+.miniCart .delIcon > a:hover {
+  color: #a5a7bc;
+  background: none;
+}
+.miniCart .delIcon {
+  float: right;
+  margin-top: 30px;
+}
+.cartImg {
+  float: left;
+}
+.cartContent {
+  float: left;
+  padding-left: 15px;
+  text-align: left;
+}
+.cartContent h3 {
+  color: #ddd;
+}
+.cartContent a {
+  color: #10111e;
+  font-size: 14px;
+  background: none;
+}
+.cartContent a:hover {
+  color: #e9b8bb;
+  background: none;
+}
+.cartImg img {
+  width: 85px;
+}
+.cartPrice span {
+  color: #ddd;
+  font-size: 13px;
+}
+.cartPrice .new {
+  font-size: 14px;
+  color: #747691;
+}
+.cartPrice span {
+  color: #a5a7bc;
+  font-size: 13px;
+  font-weight: 500;
+}
+.totalPrice {
+  border-top: 1px solid #cacadb;
+  overflow: hidden;
+  padding-top: 25px;
+  margin-top: 10px;
+}
+.totalPrice span {
+  color: #747691;
+  font-weight: 500;
+}
+.checkoutLink a {
+  background: #000000;
+  color: #fff;
+  display: block;
+  font-weight: 500;
+  padding: 16px 30px;
+  text-align: center;
+  font-size: 13px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.checkoutLink a:last-child {
+  margin: 0;
+}
+.miniCart .checkoutLink a:hover,
+.miniCart .checkoutLink a.redColor {
+  background: #000000;
+}
+.miniCart .checkoutLink a.redColor:hover {
+  background: #e9b8bb;
+}

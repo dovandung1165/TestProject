@@ -37,6 +37,7 @@ export default function productsReducer(state = initialState, action) {
         ...state,
         isFetching: false
       };
+
     default:
       return state;
   }

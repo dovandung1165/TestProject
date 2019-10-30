@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import React from "react";
-import styles from "../css/main/maintainGYPC.module.css";
+import styles from "../../assets/main/maintainGYPC.module.css";
+
 function GoiYPhongCachRender() {
   return <GoiYPhongCach />;
 }

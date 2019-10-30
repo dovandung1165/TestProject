@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from "react";
-import styles from "../css/main/maintainDBL.module.css";
+import styles from "../../assets/main/maintainDBL.module.css";
 
 function DungBoLoRender() {
   return <DungBoLo dataDungBoLo={dataDungBoLo} />;

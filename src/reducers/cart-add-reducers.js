@@ -2,18 +2,7 @@ import { ADD_TO_CART, DEL_TO_CART } from "../action/cartActions";
 
 const initialState = {
   total: 0,
-  items: [
-    // {
-    //   id: "",
-    //   name: "",
-    //   image: "",
-    //   image2: "",
-    //   category: "",
-    //   discountPrice: "",
-    //   price: 0,
-    //   quantity: 0
-    // }
-  ]
+  items: []
 };
 let localStorageState = initialState;
 if (localStorage.cartItem) {
@@ -61,6 +50,7 @@ export default function cartProduct(state = localStorageState, action) {
       const { product } = action;
       const { items } = state;
       const updatedCart = items.filter(item => item.id !== product.id);
+      console.log(updatedCart);
       const total = calculateTotal(updatedCart);
       localStorage.setItem("cartItem", JSON.stringify(updatedCart));
       return { items: updatedCart, total };

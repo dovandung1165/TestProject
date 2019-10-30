@@ -1,0 +1,103 @@
+.minicart {
+  background: #fff;
+  opacity: 0;
+  padding: 25px;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  transition: all 0.3s ease 0s;
+  width: 350px;
+  z-index: 9;
+  box-shadow: 0px 12px 24px 0px rgba(254, 69, 54, 0.3);
+  visibility: hidden;
+}
+.minicart > li {
+  display: block;
+  margin-bottom: 22px;
+  margin-left: 0;
+  overflow: hidden;
+  padding: 0;
+}
+.minicart > li:last-child {
+  margin-bottom: 0;
+}
+.minicart .delIcon > a:hover {
+  color: #a5a7bc;
+  background: none;
+}
+.minicart .delIcon {
+  float: right;
+  margin-top: 30px;
+}
+.cartImg {
+  float: left;
+}
+.cartContent {
+  float: left;
+  padding-left: 15px;
+  text-align: left;
+}
+.cartContent h3 {
+  color: #ddd;
+}
+.cartContent a {
+  color: #10111e;
+  font-size: 14px;
+  background: none;
+}
+.cartContent a:hover {
+  color: #fe4536;
+  background: none;
+}
+.cartImg img {
+  width: 85px;
+}
+.cartPrice {
+  display: flex;
+  justify-content: space-around;
+}
+.cartPrice span {
+  color: #ddd;
+  font-size: 13px;
+}
+.cartPrice .new {
+  font-size: 14px;
+  color: #747691;
+}
+.cartPrice span {
+  color: #a5a7bc;
+  font-size: 13px;
+  font-weight: 500;
+}
+.totalPrice {
+  border-top: 1px solid #cacadb;
+  overflow: hidden;
+  padding-top: 25px;
+  margin-top: 10px;
+}
+.totalPrice span {
+  color: #747691;
+  font-weight: 500;
+}
+.checkoutLink a {
+  background: #84b77c;
+  color: #fff;
+  display: block;
+  font-weight: 500;
+  padding: 16px 30px;
+  text-align: center;
+  font-size: 13px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.checkoutLink a:last-child {
+  margin: 0;
+}
+.minicart .checkoutLink a:hover,
+.minicart .checkoutLink a.red-color {
+  background: #fe4536;
+}
+.minicart .checkoutLink a.red-color:hover {
+  background: #84b77c;
+}

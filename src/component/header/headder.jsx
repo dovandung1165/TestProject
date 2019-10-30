@@ -1,8 +1,11 @@
 import React from "react";
+import styles from "../../assets/header/header.module.css";
+
 import Minicart from "../cart/Minicart";
+
 import { NavLink } from "react-router-dom";
 import { Provider } from "react-redux";
-import styles from "../css/header/header.module.css";
+
 import store from "../../store/index";
 
 export default class HeadMenuRender extends React.Component {

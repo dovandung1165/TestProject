@@ -1,8 +1,12 @@
 import React from "react";
-import styles from "../css/header/header.module.css";
-import { delToCart } from "../../action/cartActions";
-import { connect } from "react-redux";
+import styles from "../../assets/header/header.module.css";
+
 import MiniCartItem from "./minicartItem";
+
+import { delToCart } from "../../action/cartActions";
+
+import { connect } from "react-redux";
+
 class MiniCart extends React.Component {
   handleDeleteItem = id => {
     const product = this.props.cartItems.find(product => id === product.id);
@@ -10,7 +14,6 @@ class MiniCart extends React.Component {
   };
   render() {
     const { cartItems, total, count } = this.props;
-    console.log("Minicart Info", this.props);
     return (
       <React.Fragment>
         <sup className={styles.cartCount}>{count}</sup>
@@ -38,7 +41,7 @@ class MiniCart extends React.Component {
           <li>
             <div className={styles.checkoutLink}>
               <a href='#'>Shopping Cart</a>
-              <a className='red-color' href='#'>
+              <a className={styles.redColor} href='#'>
                 Checkout
               </a>
             </div>
@@ -50,7 +53,6 @@ class MiniCart extends React.Component {
 }
 
 function mapStateToProps({ cartAdd }) {
-  console.log("cartAdd:", cartAdd);
   return {
     cartItems: cartAdd.items,
     total: new Intl.NumberFormat("de-DE", {

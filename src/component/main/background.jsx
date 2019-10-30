@@ -1,7 +1,9 @@
 /* eslint-disable react/prop-types */
 import React from "react";
-import styles from "../css/main/background.module.css";
+import styles from "../../assets/main/background.module.css";
+
 import Carousel from "react-bootstrap/Carousel";
+
 function BackgroundRender() {
   return <BackgroundCarousel />;
 }

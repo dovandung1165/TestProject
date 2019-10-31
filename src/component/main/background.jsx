@@ -26,7 +26,7 @@ function BackgroundCarousel() {
             Sở hữu ngay những sản phẩm với mức giá trong mơ!
           </div>
           <div className={styles.bannerLinkbutton}>
-            <a href='null'>Tìm hiểu thêm</a>
+            <a href='#'>Tìm hiểu thêm</a>
           </div>
         </Carousel.Caption>
         <div className={styles.bannerNote}>
@@ -44,9 +44,6 @@ function BackgroundCarousel() {
           <div className={styles.bannerDiscription}>
             Luôn là tâm điểm với những kiểu đầm đẹp trong bộ sưu tập đầm nữ thời
             trang dù bạn ở bất cứ đâu, đi làm, dự tiệc, hay dạo phố.
-          </div>
-          <div className={styles.bannerLinkbutton}>
-            <a href='null'>Tìm hiểu thêm</a>
           </div>
         </Carousel.Caption>
       </Carousel.Item>

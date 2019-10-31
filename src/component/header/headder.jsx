@@ -12,7 +12,7 @@ export default class HeadMenuRender extends React.Component {
   dataHeadder = {
     trangChu: "Trang chủ",
     tapChi: "Tạp chí",
-    theoDoiDonHang: "Theo dõi đơn hàng",
+    theoDoiDonHang: "Đơn hàng",
     dangNhap: "Đăng nhập",
     dangKi: "Đăng kí",
     troGiup: "Trợ giúp",
@@ -30,32 +30,32 @@ export default class HeadMenuRender extends React.Component {
             </NavLink>
           </li>
           <li>
-            <a href='null'>{this.dataHeadder.tapChi}</a>
+            <a href='#'>{this.dataHeadder.tapChi}</a>
           </li>
           <li>
-            <a href='null'>{this.dataHeadder.theoDoiDonHang}</a>
+            <a href='#'>{this.dataHeadder.theoDoiDonHang}</a>
           </li>
           <li>
-            <a href='null'>{this.dataHeadder.dangNhap}</a>
+            <a href='#'>{this.dataHeadder.dangNhap}</a>
           </li>
           <li>
-            <a href='null'>{this.dataHeadder.dangKi}</a>
+            <a href='#'>{this.dataHeadder.dangKi}</a>
           </li>
           <li>
-            <a href='null'>{this.dataHeadder.troGiup}</a>
+            <a href='#'>{this.dataHeadder.troGiup}</a>
           </li>
           <li>
-            <a href='null'>
+            <a href='#'>
               <i className={this.dataHeadder.searchIcon}></i>
             </a>
           </li>
           <li>
-            <a href='null'>
+            <a href='#'>
               <i className={this.dataHeadder.fbIcon}></i>
             </a>
           </li>
           <li className={styles.cartIconLink}>
-            <a href='null'>
+            <a href='#'>
               <i className={this.dataHeadder.cartIcon}></i>
               <Provider store={store}>
                 <Minicart />

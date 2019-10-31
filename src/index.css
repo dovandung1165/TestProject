@@ -35,7 +35,12 @@ p {
   margin: 0;
 }
 .marginToHeader {
-  margin: 105px 0 0 0;
+  margin: 127px 0 0 0;
+}
+@media screen and (min-width: 576px) {
+  .marginToHeader {
+    margin: 105px 0 0 0;
+  }
 }
 header {
   width: 100%;
@@ -50,9 +55,9 @@ header {
 .category-main {
   float: left;
 }
-.fa-bars {
+.fa-th-list {
   color: white;
-  font-size: 30px;
+  font-size: 25px;
 }
 .fa-caret-down {
   color: #ffffff;

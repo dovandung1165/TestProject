@@ -39,7 +39,7 @@ function FooterEnd() {
           </div>
         </div>
         <div className={styles.footerEl}>
-          <div className={styles.footerTitle}>Dịch vụ vận chuyển</div>
+          <div className={styles.footerTitle}>Đã thông báo</div>
           <div className={styles.footerItem}>
             <div className={styles.footerItemIn}>
               <img src='/img/chungnhan/dathongbao.png' alt='Da thong bao' />

@@ -31,7 +31,6 @@ function GoiYPhongCachIn({ data }) {
         // eslint-disable-next-line react/jsx-key
         <GoiYPhongCachChildren key={item.id} {...item} />
       ))}
-      ;
     </React.Fragment>
   );
 }

@@ -8,7 +8,7 @@ let localStorageState = initialState;
 if (localStorage.cartItem) {
   localStorageState.items = JSON.parse(localStorage.getItem("cartItem"));
 } else {
-  localStorage.setItem("cartItem", JSON.stringify(localStorageState));
+  localStorage.setItem("cartItem", JSON.stringify([]));
 }
 
 export default function cartProduct(state = localStorageState, action) {
